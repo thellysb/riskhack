@@ -1,0 +1,225 @@
+/**** begin default style ****/
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+button {
+    outline: 0 !important;
+}
+
+header {
+    display: block;
+    position: relative;
+}
+header .logo-wrapper {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+header .logo-wrapper .web-logo {
+    width: 100%;
+}
+header .menu-wrapper {
+    display: block;
+    position: relative;
+}
+header .navbar {
+    border-radius: 25px;
+}
+header .navbar > .navbar-toggler {
+    font-size: 16px;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item,
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu > .nav-item {
+    margin-bottom: 10px;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item:last-child,
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu > .nav-item:last-child {
+    margin-bottom: 0;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    background-color: var(--color-4);
+    border-radius: 25px;
+    color: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    line-height: 36px;
+    padding: 3px 0;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu {
+    background-color: var(--color-5);
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu > .nav-item > .dropdown-item {
+    background-color: var(--color-4);
+    border-radius: 25px;
+    color: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    line-height: 36px;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item.active > .nav-link,
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu > .nav-item.active > .dropdown-item {
+    background-color: var(--color-9);
+    color: var(--color-1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .navbar > .navbar-collapse > .navbar-nav > .nav-item > .dropdown-menu > .nav-item > .dropdown-item {
+    font-size: 12px;
+}
+
+section {
+    display: block;
+    position: relative;
+}
+section iframe {
+    border-radius: 25px;
+}
+section .page-title {
+    display: flex;
+    position: relative;
+    margin: 0;
+    justify-content: center;
+}
+section .page-title::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-1);
+    border-radius: 50px;
+}
+section .page-title::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    bottom: -5.5px;
+    width: 12.5px;
+    height: 12.5px;
+    background-color: var(--color-8);
+    border-radius: 50px;
+}
+section .page-title h3,
+section .page-title h5,
+section .page-title h6 {
+    padding: 0 10px 10px;
+    background-color: var(--color-1);
+    border-bottom: 3px solid var(--color-8);
+}
+section.content-wrapper .content {
+    border-radius: 25px 25px 0 0;
+}
+section.content-wrapper .content h1,
+section.content-wrapper .content h2,
+section.content-wrapper .content h3,
+section.content-wrapper .content h4,
+section.content-wrapper .content h5,
+section.content-wrapper .content h6,
+section.content-wrapper .content a {
+    color: var(--color-9);
+}
+section.content-wrapper .content p {
+    font-size: 14px;
+}
+section.content-wrapper .content img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+section.content-wrapper .content .content-prediksi {
+    display: block;
+    position: relative;
+    background-color: var(--color-3);
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+section.content-wrapper .content .content-prediksi h4 {
+    font-weight: 700;
+}
+section.content-wrapper .content .content-prediksi h5 {
+    padding: 10px;
+    background-color: var(--color-2);
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+section.content-wrapper .content .card-group-pasaran {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+section.content-wrapper .content .card-group-pasaran .page-title::before {
+    background-color: var(--color-3);
+}
+section.content-wrapper .content .card-group-pasaran .page-title h3,
+section.content-wrapper .content .card-group-pasaran .page-title h5 {
+    background-color: var(--color-3);
+    color: var(--white);
+}
+section.content-wrapper .content .card-group-pasaran .card-prediksi .btn {
+    font-weight: 600;
+}
+
+footer {
+    display: block;
+    position: relative;
+}
+footer a {
+    color: var(--color-9) !important;
+    font-weight: 500;
+}
+
+table.table {
+    font-size: 14px !important;
+}
+table.table tr td {
+    vertical-align: middle !important;
+}
+
+.line-height-normal {
+    line-height: 1;
+}
+
+.pagination .paginate_button a {
+    color: var(--color-1) !important;
+}
+.pagination .paginate_button.active a {
+    outline: none !important;
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    box-shadow: none !important;
+    color: var(--white) !important;
+}
+/**** endof default style ****/
+
+
+
+/**** begin custom style ****/
+.border-gold {
+    border-color: var(--white);
+    border-style: dashed;
+    border-width: 3px;
+    border-bottom: 0;
+}
+
+.btn {
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn.btn-search {
+    border-radius: 6px;
+}
+.form-control {
+    border-radius: 6px;
+}
+/**** endof custom style ****/

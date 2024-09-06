@@ -1,0 +1,90 @@
+.disabled-lock {
+    position: relative;
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.disabled-lock::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('https://app.betserver.site/img/lock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tabChangeButton {
+    width: 150px;
+    background-color: transparent !important;
+    transition: 0.2s;
+}
+
+.tabChangeButton:hover {
+    background-color: var(--button-color) !important;
+    transition: 0.2s;
+}
+
+
+
+.game-link img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.menuIcon {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.bg-yellow {
+    background-color: yellow !important;
+}
+
+/* Estilo padrÃ£o do .game-link */
+.game-link {
+    margin: 0px 10px !important;
+    position: relative;
+    overflow: hidden;
+    display: block; /* ou inline-block, dependendo do layout necessÃ¡rio */
+    /* Restante do seu CSS */
+}
+
+/* Estilo padrÃ£o do pseudo-elemento .game-link:before */
+.game-link:before {
+    content: "JOGAR NA PLATAFORMA INDICADA";
+    font-size: 0.75em;
+    width: 125px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 25%; /* Inicia fora do contÃªiner */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.game-link:hover {
+    transform: scale(1.05);
+    /* Amplia a imagem em 5% */
+    filter: brightness(60%);
+    /* Diminui o brilho da imagem */
+}
+
+
+/* Estilo do .game-link:hover:before para quando o mouse estÃ¡ em cima do elemento */
+.game-link:hover:before {
+    opacity: 1;
+    visibility: visible;
+    top: 25%; /* Move para o meio do contÃªiner */
+}

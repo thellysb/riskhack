@@ -1,0 +1,95 @@
+/**** begin custom colors ****/
+:root {
+    --color-1: #202020;
+    --color-2: #ffd700;
+    --color-3: #ffd700;
+    --color-4: #000000;
+    --color-5: #000000;
+    --color-6: #000000;
+    --color-7: #000000;
+    --color-8: #ffd700;
+    --color-9: #ffd700;
+}
+/**** endof custom colors ****/
+
+/**** begin custom background colors ****/
+.bg-color-1 { background-color: var(--color-1) !important; }
+.bg-color-2 { background-color: var(--color-2) !important; }
+.bg-color-3 { background-color: #106523 !important; }
+.bg-color-4 { background-color: var(--color-4) !important; }
+.bg-color-5 { background-color: var(--color-5) !important; }
+.bg-color-6 { background-color: var(--color-6) !important; }
+.bg-color-7 { background-color: var(--color-7) !important; }
+.bg-color-8 { background-color: #106523 !important; }
+.bg-color-9 { background-color: var(--color-9) !important; }
+
+.badge.badge-info { background-color: var(--color-1) !important; }
+/**** endof custom background colors ****/
+
+
+
+/**** begin custom text colors ****/
+.text-gold { color: var(--color-9) !important; }
+/**** endof custom text colors ****/
+
+
+
+/**** begin custom rtp-slot colors ****/
+.yellow{
+    background-color: #ffc107;
+}
+.green{
+    background-color: #28a745;
+}
+.red{
+    background-color: #dc3545;
+}
+/**** endof custom rtp-slot colors ****/
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #000000;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+/**** begin custom bg card list colors ****/
+.card.card-list {
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.card.card-list .card-body {
+    border-radius: 25px;
+}
+.card.card-list.bg-card-red {
+    background-image: linear-gradient(to bottom, #9d0208, #6a040f) !important;
+}
+.card.card-list.bg-card-yellow {
+    background-image: linear-gradient(to bottom, #ffba08, #b88b06) !important;
+}
+.card.card-list.bg-card-yellow p {
+    color: #434343 !important;
+}
+.card.card-list.bg-card-yellow .text-gold {
+    color: #121212 !important;
+}
+.card.card-list.bg-card-green {
+    background-image: linear-gradient(to bottom, #38b000, #008000) !important;
+}
+.card.card-list.bg-card-blue {
+    background-image: linear-gradient(to bottom, #EEEEEE, #000000) !important;
+}
+
+.bg-primary{
+    background-color: #119705 !important;
+}
+/**** endof custom bg card list colors ****/
